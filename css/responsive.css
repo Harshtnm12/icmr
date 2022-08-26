@@ -1,0 +1,76 @@
+/* ------ Mobile Navigation ------ */
+
+@media screen and (max-width: 1199px) {
+  .mobile_nav_active .mobile_navigation {
+    left: 0;
+  }
+  .mobile_navigation {
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    z-index: 9997;
+    overflow: auto;
+  }
+  .mobile_nav_active {
+    overflow: hidden;
+  }
+  .mobile_nav_active .navbar {
+    left: 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .mobile_nav_show {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    margin-right: 10px;
+  }
+  .mobile_nav_hide {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .mobile_navigation {
+    display: none;
+  }
+  .mobile_nav_show {
+    display: none;
+  }
+  .__main_navbar .navbar {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .website_main_page_hero .hero_content .hero_main_title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .website_main_page_hero .hero_content .hero_sub_title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .all_mortgage_hero_content .hero_main_title {
+    font-size: 36 px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 767px) {
+  #our-team .our_team_img {
+    min-height: 280px;
+  }
+}

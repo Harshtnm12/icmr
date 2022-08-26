@@ -1,0 +1,120 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ------- General Rules ------ */
+html {
+  width: 100%;
+  font-size: 15px;
+}
+:root {
+  scroll-behavior: smooth;
+  --primary: #092e63;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins, Helvetica, Arial, Verdana, sans-serif;
+  color: #252525;
+  font-weight: 400;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+p {
+  margin: 0.8rem 0;
+}
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+.__site_wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+/* ------- Main Navbar ------- */
+.__main_navbar {
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.__main_navbar .navbar > ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.__main_navbar .navbar > ul > li {
+  position: relative;
+}
+.__main_navbar .navbar ul > li > a {
+  display: inline-block;
+  padding: 20px 16px;
+}
+.__main_navbar .navbar ul > li > a:hover {
+  color: var(--primary);
+}
+.__main_navbar .navbar ul > li > a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+#footer {
+  background-color: #092e63;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#footer p,
+#footer a {
+  color: #fff;
+}
+#footer .footer_main {
+  text-align: center;
+  border-bottom: 2px solid #ffa921;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+#footer .footer_links {
+  text-align: center;
+}
+#footer .footer_links h3 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+#footer .footer_links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer_links ul > li:not(:last-child) {
+  margin-right: 15px;
+}
+#footer .footer_links ul > li a {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  text-align: center;
+  line-height: 42px;
+  background-color: #fff;
+  color: var(--primary);
+  font-size: 22px;
+  border-radius: 50%;
+}
+#footer .footer_extra {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+#footer .footer_extra p > a {
+  text-decoration: underline;
+}
