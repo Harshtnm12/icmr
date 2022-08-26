@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="footer_extra">
-            <p>© Website Content Owned by Indian Council of Medical Research, DHR, MoHFW, GoI | <a href="#">Privacy Policy</a></p>
+            <p>&copy; Website Content Owned by Indian Council of Medical Research, DHR, MoHFW, GoI | <a href="#">Privacy Policy</a></p>
         </div>
     </div>
 </footer>
