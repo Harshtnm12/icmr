@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
 
     <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/remixicon-2.5.0/remixicon.css" />
@@ -27,7 +28,7 @@
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="logo">
                     <a href="#">
-                        <img src="img/logo.png" class="img-fluid" alt="Logo" />
+                        <img src="img/icmrlogo.png" class="img-fluid" alt="Logo" />
                     </a>
                 </div>
                 <nav class="navbar">

@@ -36,6 +36,7 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/glightbox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

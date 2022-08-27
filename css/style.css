@@ -9,6 +9,7 @@ html {
 :root {
   scroll-behavior: smooth;
   --primary: #092e63;
+  --i-yellow: #ffa921;
 }
 body {
   width: 100%;
@@ -43,12 +44,25 @@ section {
   width: 100%;
   height: auto;
 }
-/* ------- Main Navbar ------- */
+.section_header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section_header h2 {
+  color: var(--primary);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+}
+/*--------------------------------------------------------------
+# Main Navbar
+--------------------------------------------------------------*/
 .__main_navbar {
   width: 100%;
   background-color: #fff;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  padding: 0.5rem 0;
 }
 .__main_navbar .navbar > ul {
   display: flex;
@@ -60,7 +74,7 @@ section {
 }
 .__main_navbar .navbar ul > li > a {
   display: inline-block;
-  padding: 20px 16px;
+  padding: 10px 16px;
 }
 .__main_navbar .navbar ul > li > a:hover {
   color: var(--primary);
@@ -69,6 +83,296 @@ section {
   visibility: visible;
   width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.icmr_landing_pageHero {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.icmr_landing_pageHero .carousel {
+  width: 100%;
+  min-height: 70vh;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+
+.icmr_landing_pageHero .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.icmr_landing_pageHero .carousel-item::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+}
+.icmr_landing_pageHero .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .icmr_landing_pageHero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.icmr_landing_pageHero .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .icmr_landing_pageHero .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.icmr_landing_pageHero .carousel-control-next-icon,
+.icmr_landing_pageHero .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icmr_landing_pageHero .carousel-control-prev,
+.icmr_landing_pageHero .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.icmr_landing_pageHero .carousel-control-prev:focus,
+.icmr_landing_pageHero .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.icmr_landing_pageHero .carousel-control-prev:hover,
+.icmr_landing_pageHero .carousel-control-next:hover {
+  opacity: 0.9;
+}
+.icmr_landing_pageHero .carousel-indicators button {
+  background-color: var(--i-yellow);
+}
+/*--------------------------------------------------------------
+# About us section
+--------------------------------------------------------------*/
+#about-us {
+  background-color: var(--primary);
+}
+#about-us img.about_us_img {
+  border-radius: 12px;
+}
+#about-us p {
+  color: #fff;
+}
+#about-us h2 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+#about-us .aside_about_para {
+  padding: 20px 20px 0;
+  border-left: 3px solid var(--i-yellow);
+}
+#about-us .aside_about_para p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+#about-us a.more_about_btn {
+  display: inline-block;
+  background-color: var(--i-yellow);
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 8px;
+}
+/*--------------------------------------------------------------
+# Our history section
+--------------------------------------------------------------*/
+#our-history {
+  background-color: #cfcfcf;
+}
+#our-history .administrative h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+#our-history .administrative .aside_administrative_para {
+  padding: 20px;
+  border-left: 3px solid var(--i-yellow);
+}
+.administrative .aside_administrative_para p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+#our-history .our_history_card {
+  background-color: var(--primary);
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+#our-history .our_history_card p {
+  color: #fff;
+}
+#our-history .our_history_card .our_history_card_head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+#our-history .our_history_card h2,
+#our-history .our_history_card h3 {
+  color: var(--i-yellow);
+  margin-bottom: 1rem;
+}
+#our-history .our_history_card_head h2 {
+  line-height: 1.5;
+  font-weight: 600;
+}
+#our-history .our_history_card .our_history_card_main {
+  position: relative;
+  overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Our work
+--------------------------------------------------------------*/
+#our-work .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+#our-work .swiper-pagination .swiper-pagination-bullet {
+  width: 36px;
+  height: 6px;
+  border-radius: 8px;
+  background-color: var(--i-yellow);
+}
+#our-work .our_work_card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+#our-work .our_work_card a.our_work_tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+  padding: 6px 18px;
+  background-color: var(--i-yellow);
+  border-radius: 8px;
+  color: #fff;
+}
+/*--------------------------------------------------------------
+# Brand Collaterals
+--------------------------------------------------------------*/
+#collaterals .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+#collaterals .swiper-pagination .swiper-pagination-bullet {
+  width: 36px;
+  height: 6px;
+  border-radius: 8px;
+  background-color: var(--i-yellow);
+}
+#collaterals .collateral_card {
+  padding: 30px;
+  background-color: #cfcfcf;
+  border-radius: 16px;
+  text-align: center;
+}
+#collaterals .collateral_card .collateral_card_exp {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin: 1rem 0;
+}
+#collaterals .collateral_card .collateral_card_ord {
+  display: inline-block;
+  background-color: var(--i-yellow);
+  color: #fff;
+  padding: 6px 22px;
+  border-radius: 8px;
+  margin-bottom: -50px;
+}
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+#gallery {
+  background-color: var(--i-yellow);
+}
+#gallery .section_title {
+  color: #fff;
+}
+#gallery .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+#gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 36px;
+  height: 6px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+#gallery img {
+  border-radius: 12px;
+}
+/*--------------------------------------------------------------
+# Contact us
+--------------------------------------------------------------*/
+#contact-us {
+  background-color: #cfcfcf;
+}
+#contact-us h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+#contact-us .aside_contactUs_para {
+  padding: 20px;
+  border-left: 3px solid var(--i-yellow);
+}
+#contact-us .aside_contactUs_para p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+#contact-us form input[type="text"],
+#contact-us form input[type="email"],
+#contact-us form textarea {
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+#contact-us form button[type="submit"] {
+  border: 0;
+  outline: 0;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 #footer {
   background-color: #092e63;
   padding-top: 50px;
@@ -80,7 +384,7 @@ section {
 }
 #footer .footer_main {
   text-align: center;
-  border-bottom: 2px solid #ffa921;
+  border-bottom: 3px solid #ffa921;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }

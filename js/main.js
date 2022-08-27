@@ -27,14 +27,31 @@
       once: true,
       mirror: false,
     });
-    new Swiper("#recognised .mySwiper", {
+    new Swiper("#our-work .mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
       grabCursor: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      pagination: {
+        el: "#our-work .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+    new Swiper("#collaterals .mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: "#collaterals .swiper-pagination",
+        clickable: true,
       },
       breakpoints: {
         // when window width is >= 768px
@@ -49,24 +66,30 @@
         },
       },
     });
-    new Swiper("#awards .mySwiper", {
+    new Swiper("#gallery .mySwiper", {
       slidesPerView: 1,
+      spaceBetween: 30,
       loop: true,
       grabCursor: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      pagination: {
+        el: "#gallery .swiper-pagination",
+        clickable: true,
       },
       breakpoints: {
         // when window width is >= 768px
         768: {
-          slidesPerView: 1,
+          slidesPerView: 2,
+          spaceBetween: 30,
         },
         // when window width is >= 992px
         992: {
-          slidesPerView: 2,
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
       },
+    });
+    GLightbox({
+      selector: ".media_gallery",
     });
   });
 })();

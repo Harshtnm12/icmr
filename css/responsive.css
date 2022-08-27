@@ -74,3 +74,15 @@
     min-height: 280px;
   }
 }
+@media screen and (min-width: 992px) {
+  #our-history .our_history_card_main::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: var(--i-yellow);
+    z-index: 1;
+  }
+}
