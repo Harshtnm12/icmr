@@ -335,6 +335,47 @@ section {
   border-radius: 12px;
 }
 /*--------------------------------------------------------------
+# Achievements
+--------------------------------------------------------------*/
+#achievements {
+  background-color: #cfcfcf;
+}
+#achievements .achievement_card {
+  background-color: var(--i-yellow);
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+}
+#achievements .achievement_card h3 {
+  color: var(--primary);
+  font-weight: 600;
+  line-height: 1.5;
+}
+#achievements .achievement_card .achievement_card_img_wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+/*--------------------------------------------------------------
+# Newsletter
+--------------------------------------------------------------*/
+#newsletter form input[type="text"],
+#newsletter form input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: rgb(255, 169, 33, 0.7);
+  border-radius: 12px;
+}
+#newsletter form button[type="submit"] {
+  border: 0;
+  outline: 0;
+  padding: 12px 40px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 12px;
+}
+/*--------------------------------------------------------------
 # Contact us
 --------------------------------------------------------------*/
 #contact-us {

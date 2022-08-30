@@ -28,7 +28,7 @@
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="logo">
                     <a href="#">
-                        <img src="img/icmrlogo.png" class="img-fluid" alt="Logo" />
+                        <img src="img/icmrlogo-1.png" class="img-fluid" alt="Logo" />
                     </a>
                 </div>
                 <nav class="navbar">

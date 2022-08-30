@@ -1,4 +1,29 @@
 </div>
+<!-- ===== Mobile Navigation start ====== -->
+<div class="mobile_navigation">
+    <div class="d-flex justify-content-between align-items-center">
+        <a href="/"><img src="img/icmrlogo-1.png" alt="" class="img-fluid" /></a>
+        <i class="bi bi-x mobile_nav_hide"></i>
+    </div>
+    <ul>
+        <li>
+            <a href="#home"> About Us </a>
+        </li>
+        <li>
+            <a href="#about"> Our Work </a>
+        </li>
+        <li>
+            <a href="#services"> History </a>
+        </li>
+        <li>
+            <a href="#team"> Media Gallery </a>
+        </li>
+        <li>
+            <a href="#contact"> Brand Collaterals </a>
+        </li>
+    </ul>
+</div>
+<!-- ===== Mobile Navigation end ====== -->
 <footer id="footer">
     <div class="container">
         <div class="footer_main">

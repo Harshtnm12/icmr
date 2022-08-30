@@ -1,33 +1,42 @@
 /* ------ Mobile Navigation ------ */
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .mobile_nav_active .mobile_navigation {
-    left: 0;
+    right: 0;
   }
   .mobile_navigation {
     padding: 20px;
     background-color: #fff;
     position: fixed;
     top: 0;
-    left: -100%;
-    width: 100%;
+    right: -100%;
+    width: 360px;
     height: 100%;
     transition: 0.3s;
     z-index: 9997;
     overflow: auto;
   }
+  .mobile_navigation ul {
+    margin-top: 1.8rem;
+    padding: 0;
+  }
+  .mobile_navigation ul > li {
+    position: relative;
+  }
+  .mobile_navigation ul > li > a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
   .mobile_nav_active {
     overflow: hidden;
-  }
-  .mobile_nav_active .navbar {
-    left: 0;
   }
   .navbar {
     display: none;
   }
   .mobile_nav_show {
     display: block;
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
@@ -35,14 +44,14 @@
   }
   .mobile_nav_hide {
     display: block;
-    font-size: 28px;
+    font-size: 36px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 991px) {
   .mobile_navigation {
     display: none;
   }
