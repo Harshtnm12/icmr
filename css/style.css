@@ -358,6 +358,40 @@ section {
   margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
+# Announcements
+--------------------------------------------------------------*/
+#announcements .announcements_card {
+  padding: 20px;
+  background-color: var(--i-yellow);
+  border-radius: 12px;
+  min-height: 100%;
+}
+#announcements .announcements_card img {
+  border-radius: 12px;
+}
+#announcements .announcements_card > * {
+  color: #fff;
+}
+.announcements_card .announcements_card_date {
+  font-size: 13px;
+  font-weight: 400;
+}
+#announcements .announcements_special_card {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-image: url("../img/leonhard-niederwimmer-dGVnybisq4I-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+.announcements_special_card p {
+  color: #fff;
+}
+/*--------------------------------------------------------------
 # Newsletter
 --------------------------------------------------------------*/
 #newsletter form input[type="text"],

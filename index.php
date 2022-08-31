@@ -316,6 +316,71 @@
         </div>
     </div>
 </section>
+<section id="announcements">
+    <div class="row">
+        <div class="col-12">
+            <div class="section_header">
+                <h2 class="section_title">Recent Announcements</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="row gy-4">
+                    <div class="col-12 col-sm-6">
+                        <div class="announcements_special_card">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="announcements_card">
+                            <img src="img/leonhard-niederwimmer-dGVnybisq4I-unsplash.jpg" alt="" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                            <span class="announcements_card_date">26 July 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="row gy-4">
+                    <div class="col-12">
+                        <div class="row gy-4 min-h-100">
+                            <div class="col-12 col-sm-6">
+                                <div class="announcements_card">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <span class="announcements_card_date">26 July 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="announcements_card">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <span class="announcements_card_date">26 July 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row gy-4">
+                            <div class="col-12 col-sm-6">
+                                <div class="announcements_card">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <span class="announcements_card_date">26 July 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="announcements_card">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <span class="announcements_card_date">26 July 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="newsletter">
     <div class="container">
         <div class="row">
